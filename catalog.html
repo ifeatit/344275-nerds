@@ -5,8 +5,185 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="http://placehold.it/150x100" alt="logo">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a class="link-current" href="#">Студия</a> 
+            </li> 
+              <li>
+              <a href="#">Клиенты</a> 
+            </li>
+            <li>
+              <a href="catalog-page.html">Магазин</a> 
+            </li>
+            <li>
+              <a href="#">Контакты</a>  
+            </li>
+          </ul>
+        </nav>  
+        <div class="user-block">
+          <a class="sale" href="">Корзина</a>
+        </div>
+        <h1>Магазин готовых шаблонов</h1> 
+      </div>
+    </header>
+    <main class="container">
+      <div class="sidebar">
+        <form action="#" method="post">
+          <div class="price-range">    
+            <p>Стоимость:</p>
+            <div class="range-controls">
+              <div class="scale">
+                <div style="width:75%;" class="bar"></div>
+              </div>
+              <div class="toggle min-toggle">
+              </div>
+              <div class="toggle max-toggle">
+              </div>
+            </div>
+                              
+            <div class="price-controls">
+              <p>
+                <label for="min-price">От</label>
+                <input class="min-price" type="text" id="min-price" value="0">
+              </p>
+              <p>
+                <label for="max-price">До</label>
+                <input class="max-price" type="text" id="max-price" value="15000">
+              </p>
+            </div>                        
+          </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+          <div class="sidebar-section">
+            <p>Сетка:</p>
+            <p>
+              <input type="radio" name="adaptive" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </p>
+            <p>
+              <input type="radio" name="fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </p>
+            <p>
+              <input type="radio" name="flexible" id="flexible">
+              <label for="flexible">Резиновая</label>
+            </p>
+          </div>
 
+          <div class="sidebar-section">
+            <p>Особенности:</p>
+            <p>
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </p>
+            <p>
+              <input type="checkbox" name="features" id="features">
+              <label for="features">Блок преимуществ</label>
+            </p>
+            <p>
+              <input type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
+            </p>
+            <p>
+              <input type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">Галерея</label>
+            </p>
+            <p>
+              <input type="checkbox" name="cart" id="cart">
+              <label for="cart">Корзина</label>
+            </p>
+          </div>
+          <input class="form-submit" type="submit" id="form-submit" name="form-submit" value="Показать">
+        </form>
+      </div>
+      <div class="catalog">
+        <div class="sort-by">
+          <div class="sort-filters">
+           <span>Сортировать:</span>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По названию</a>
+          </div>
+          <div class="arrows">
+            <a class="arrow-down" href="#"></a>
+            <a class="arrow-up" href="#"></a>
+          </div>
+        </div>
+        <div class="catalog-container">
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Информационный сайт для туристов</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="1.jpg" width="50" height="100" alt="sedona">sedona</a>
+          </div>
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="2.jpg" width="50" height="100" alt="pink">pink</a> <br>
+          </div>
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="3.jpg" width="50" height="100" alt="borodinski">borodinski</a>
+          </div>
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="4.jpg" width="50" height="100" alt="mischka">mischka</a> <br>
+          </div>
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="5.jpg" width="50" height="100" alt="A+">A+</a> 
+          </div>
+          <div class="catalog-item">
+            <div class="item-popup">
+              <p>Sedona</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a class="buy-btn" href="#">10 000 руб.</a>
+            </div>
+            <a href="#"><img src="6.jpg" width="50" height="100" alt="Кваст">Кваст</a>
+          </div>
+        </div>
+        <div class="paginator">
+          <a class="paginator-active" href="#1">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+          <a href="paginator-next">Следующая</a>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-bin-vk" href="#">В контакте</a>
+          <a class="social-btn social-bin-f" href="#">Фейсбук</a>
+          <a class="social-btn social-bin-in" href="#">Инстаграмм</a>
+        </section> 
+        <section>
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </section>  
+      </div>
+      </footer>
   </body>
-</html>
+</html>    
